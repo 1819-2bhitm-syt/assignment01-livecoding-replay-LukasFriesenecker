@@ -13,7 +13,7 @@ const circle = {
 circle.draw();*/
 
 //Factory Function
-function createCircle(radius){
+/*function createCircle(radius){
     return{
         radius,
         draw:function(){
@@ -23,5 +23,16 @@ function createCircle(radius){
 }
 
 const circle = createCircle(1);
-circle.draw();
+circle.draw();*/
+
+//Constructor Function
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
+
+const another = new Circle(1);
+another.draw();
 
